@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "lcd14";
+  src: url("./fonts/lcd/LCD14.otf");
+}
+
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 5px;
+}
+#time {
+  height: 100px;
+}
+.clock {
+  border: solid 1px gray;
+  border-bottom: none;
+}
+.clock:last-of-type {
+  border: solid 1px gray;
+}
+.clock > span {
+  margin-right: 1rem;
+  width: 150px;
+  display: inline-block;
+  padding: 1rem;
+}
+span.digits {
+  font-family: "lcd14";
+  font-size: 2rem;
+  color: yellowgreen;
+  background-color: black;
+  text-align: center;
+  width: 300px;
+}
