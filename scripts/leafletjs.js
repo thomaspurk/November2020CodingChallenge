@@ -68,7 +68,8 @@ geojson = L.geoJSON(geoJSON_TimeZones, {
 }).addTo(mymap);
 
 function zoomToFeature(e) {
-  map.fitBounds(e.target.getBounds());
+  mymap.fitBounds(e.target.getBounds());
+  console.log("test1");
 }
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
